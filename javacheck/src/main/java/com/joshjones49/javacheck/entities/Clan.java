@@ -20,6 +20,6 @@ public class Clan {
 
     private String name;
 
-    @OneToMany(mappedBy = "clan", cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<User> members = new ArrayList<>();
+    @OneToMany(mappedBy = "clan", cascade = CascadeType.ALL)
+    private List<Player> members = new ArrayList<>();
 }

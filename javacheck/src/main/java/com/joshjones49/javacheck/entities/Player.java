@@ -12,7 +12,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class User {
+public class Player {
 
     @Id
     @GeneratedValue
@@ -22,9 +22,10 @@ public class User {
 
     private String password;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "clan_id")
+    @ManyToOne(fetch = FetchType.LAZY, optional = true)
+    @JoinColumn(name = "clan_id", nullable = true)
     private Clan clan;
 
+    @ElementCollection
     private List<Integer> scores = new ArrayList<>();
 }
