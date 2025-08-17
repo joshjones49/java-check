@@ -25,6 +25,14 @@ public class PlayerServiceImpl implements PlayerService {
         //make sure user has sent in proper request
         validateUserRequest(playerRequestDto);
 
+        //check if username already exists
+        List<Player> players = playerRepo.findByUsername(playerRequestDto.getUsername());
+
+        //if players with username found throw exception
+        if(!players.isEmpty()) {
+            throw new BadRequestException();
+        }
+
         //turn the DTO into a User entity
         Player player = playerMapper.requestDtoToEntity(playerRequestDto);
 
@@ -48,7 +56,7 @@ public class PlayerServiceImpl implements PlayerService {
             throw new BadRequestException();
         }
 
-        if(playerRequestDto.getUsername() == null || playerRequestDto.getPassword().isEmpty()) {
+        if(playerRequestDto.getUsername() == null || playerRequestDto.getUsername().isEmpty()) {
             throw new BadRequestException();
         }
 
