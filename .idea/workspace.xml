@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="49e8cf08-63a3-497e-b5cf-a14453bb90f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/javacheck/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/JavacheckApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/Seeder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/controllers/CardController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/controllers/PlayerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/dtos/card/CardRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/dtos/card/CardResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/dtos/player/PlayerRequestDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/dtos/player/PlayerResponseDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/entities/Card.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/entities/Clan.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/entities/Player.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/mappers/CardMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/mappers/PlayerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/methods/DataValidation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/repos/CardRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/repos/PlayerRepo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/services/CardService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/services/PlayerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/services/impl/CardServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/java/com/joshjones49/javacheck/services/impl/PlayerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javacheck/src/test/java/com/joshjones49/javacheck/JavacheckApplicationTests.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="31NWYdOssEVPza4c2EyssIpsAHD" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/joshj/OneDrive/Desktop/java-check&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="java-check" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="java-check" />
+      <option name="filePath" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="java-check" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="Tox" factoryName="Tox">
+      <module name="java-check" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="49e8cf08-63a3-497e-b5cf-a14453bb90f9" name="Changes" comment="" />
+      <created>1755365059471</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755365059471</updated>
+    </task>
+    <servers />
+  </component>
+</project>
