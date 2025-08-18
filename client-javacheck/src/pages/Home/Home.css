@@ -1,4 +1,10 @@
 .home {
-    color: white;
     background-color: transparent;
+    justify-content: space-evenly;
+}
+
+.home>h1>span{
+    background: linear-gradient(yellow, red);
+    background-clip: text;
+    color: transparent;
 }

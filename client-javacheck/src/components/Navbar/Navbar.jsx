@@ -17,6 +17,10 @@ const Navbar = () => {
       <Link to='/play'className='links'>
         <h1>PLAY</h1>
       </Link>
+
+      <Link to='/scoreboard' className='links'>
+        <h1>SCOREBOARD</h1>
+      </Link>
     </div>
   )
 }
