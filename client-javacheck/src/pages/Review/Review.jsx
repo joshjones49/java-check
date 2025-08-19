@@ -1,5 +1,7 @@
 import './Review.css'
 
+import ReviewCtnRight from '../../components/ReviewCtnRight/ReviewCtnRight'
+
 import { Link } from 'react-router-dom'
 
 const Review = () => {
@@ -24,9 +26,7 @@ const Review = () => {
 
       </div>
 
-      <div className='review-right' >
-        RIGHT
-      </div>
+      <ReviewCtnRight />
 
     </div>
   )

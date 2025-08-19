@@ -12,11 +12,6 @@
     justify-content: space-around;
 }
 
-.review-right{
-    width: 83%;
-    height: 100%;
-}
-
 .review-menu>input{
     text-align: center;
     height: 30px;
