@@ -5,8 +5,18 @@ import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import Review from './pages/Review/Review'
+import { Toaster } from 'react-hot-toast'
+import { useContext, useEffect } from 'react'
+import { CardContext } from './ContextAPIs/CardContextProvider'
 
 function App() {
+  const {
+    getAllCards
+  } = useContext(CardContext)
+
+  useEffect(() => {
+    getAllCards()
+  }, [])
 
   return (
 
@@ -20,10 +30,11 @@ function App() {
           <Route path='/review' element={<Review/>}/>
         </Routes>
       </div>
+      <Toaster/>
 
 
       <div className='decoration1 decoration' ></div>
-      <div className='decoration2 decoration' ></div>
+      {/* <div className='decoration2 decoration' ></div> */}
       <div className='decoration3 decoration' ></div>
     </div>
   )

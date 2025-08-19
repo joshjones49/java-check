@@ -13,6 +13,7 @@ const Review = () => {
         <input type="text" placeholder='search' />
 
         <div className='category-ctn' >
+          <h1>Categories</h1>
           <Link className='r-links'>
             <h4>OOP</h4>
           </Link>

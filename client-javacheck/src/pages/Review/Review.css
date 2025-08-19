@@ -24,9 +24,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 75%;
-    width: 90%;
+    justify-content: start;
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    padding-top: 20px;
 }
 
 .r-links{
@@ -37,6 +39,5 @@
 }
 
 .r-links:hover{
-    color: gold;
     transform: scale(1.2);
 }

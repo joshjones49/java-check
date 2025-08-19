@@ -7,9 +7,13 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CardResponseDto {
 
+    private Long id;
+
     private String question;
 
     private String answer;
 
     private String category;
+
+    private boolean answerDisplayed;
 }

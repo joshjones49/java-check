@@ -29,7 +29,7 @@
 }
 
 .decoration1{
-    background: linear-gradient(orange, red);
+    background: radial-gradient(circle at -5% 15%,orange, red);
     position: fixed;
     margin-left: 1500px;
     margin-top: 600px;
@@ -41,7 +41,7 @@
 }
 
 .decoration3{
-    background: linear-gradient(green, lightgreen);
+    background: radial-gradient(circle at -5% 15%,rgb(170, 101, 170), purple 40%);
     position: fixed;
     margin-left: -1500px;
     margin-top: -600px;
@@ -49,13 +49,9 @@
 
 .container{
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-top: 1px solid white;
-    border-left: 1px solid white;
     border-radius: 10px;
     height: 90vh;
     width: 90vw;
-    backdrop-filter: blur(10px);
 }
 
 .pages{
