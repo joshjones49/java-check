@@ -1,3 +1,47 @@
 .review{
-    
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.review-menu{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.review-right{
+    width: 83%;
+    height: 100%;
+}
+
+.review-menu>input{
+    text-align: center;
+    height: 30px;
+    width: 90%;
+    border: none;
+    border-radius: 10px;
+}
+
+.category-ctn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 75%;
+    width: 90%;
+}
+
+.r-links{
+    text-decoration: none;
+    color: white;
+    transition: .2s ease-in-out;
+    margin-top: 2rem;
+}
+
+.r-links:hover{
+    color: gold;
+    transform: scale(1.2);
 }

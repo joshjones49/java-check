@@ -17,7 +17,5 @@
 }
 .links:hover{
     transform: scale(1.1);
-    background: linear-gradient(yellow, red);
-    background-clip: text;
-    color: transparent;
+    color: gold;
 }
