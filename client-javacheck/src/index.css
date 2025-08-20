@@ -11,8 +11,8 @@
   }
 
   50%{
-    scale: 1.4;
-    border-radius: 10%;
+    scale: 1.5;
+    border-radius: 5%;
   }
 
   100%{
@@ -45,9 +45,10 @@
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: transparent;
+  border: 1px solid purple;
 }
 
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(orange, purple);
+  background: purple;
 }

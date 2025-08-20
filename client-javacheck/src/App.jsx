@@ -8,6 +8,7 @@ import Review from './pages/Review/Review'
 import { Toaster } from 'react-hot-toast'
 import { useContext, useEffect } from 'react'
 import { CardContext } from './ContextAPIs/CardContextProvider'
+import Play from './pages/Play/Play'
 
 function App() {
   const {
@@ -28,6 +29,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home/>}/>
           <Route path='/review' element={<Review/>}/>
+          <Route path='/play' element={<Play/>}/>
         </Routes>
       </div>
       <Toaster/>

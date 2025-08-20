@@ -18,21 +18,21 @@
 }
 
 .decoration{
-    height: 200px;
-    width: 200px;
+    height: 700px;
+    width: 700px;
     border-radius: 50%;
     animation: pulse;
-    animation-duration: 20s;
+    animation-duration: 120s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
 
 .decoration1{
-    background: radial-gradient(circle at -5% 15%,orange, red);
+    background: radial-gradient(circle at -5% 15%,orange, rgb(255, 115, 0) 40%);
     position: fixed;
-    margin-left: 1500px;
-    margin-top: 600px;
+    margin-left: 1800px;
+    margin-top: 900px;
 }
 
 .decoration2{
@@ -43,8 +43,8 @@
 .decoration3{
     background: radial-gradient(circle at -5% 15%,rgb(170, 101, 170), purple 40%);
     position: fixed;
-    margin-left: -1500px;
-    margin-top: -600px;
+    margin-left: -1800px;
+    margin-top: -900px;
 }
 
 .container{

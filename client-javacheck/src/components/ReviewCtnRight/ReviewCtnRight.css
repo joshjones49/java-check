@@ -26,6 +26,8 @@
     backdrop-filter: blur(10px);
     padding-left: 2%;
     padding-right: 2%;
+    animation-name: fadeIn;
+    animation-duration: .8s;
 }
 
 .toggle-btn{
@@ -46,6 +48,6 @@
 
 .toggle-btn:hover{
     transform: scale(1.05);
-    background: linear-gradient(orange, purple 150%);
+    background: purple;
     border: none;
 }

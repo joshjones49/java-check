@@ -36,6 +36,7 @@
     color: white;
     transition: .2s ease-in-out;
     margin-top: 2rem;
+    cursor: pointer;
 }
 
 .r-links:hover{
