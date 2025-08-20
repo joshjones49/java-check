@@ -11,18 +11,8 @@ import { CardContext } from './ContextAPIs/CardContextProvider'
 import Play from './pages/Play/Play'
 
 function App() {
-  const {
-    getAllCards
-  } = useContext(CardContext)
-
-  useEffect(() => {
-    getAllCards()
-  }, [])
-
+  
   return (
-
-    
-
     <div className='app'>
       <div className='container' >
         <Navbar/>
@@ -33,8 +23,7 @@ function App() {
         </Routes>
       </div>
       <Toaster/>
-
-
+      
       <div className='decoration1 decoration' ></div>
       {/* <div className='decoration2 decoration' ></div> */}
       <div className='decoration3 decoration' ></div>

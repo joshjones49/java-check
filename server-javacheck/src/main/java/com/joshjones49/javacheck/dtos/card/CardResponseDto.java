@@ -17,6 +17,4 @@ public class CardResponseDto {
     private String answer;
 
     private String category;
-
-    private boolean answerDisplayed;
 }

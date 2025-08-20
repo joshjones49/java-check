@@ -2,14 +2,13 @@ import './Review.css'
 
 import ReviewCtnRight from '../../components/ReviewCtnRight/ReviewCtnRight'
 
-import { Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { CardContext } from '../../ContextAPIs/CardContextProvider'
 
 const Review = () => {
 
   const {
-    selectedCategory, selectCategory
+    selectCategory
   } = useContext(CardContext);
 
   return (
@@ -21,8 +20,8 @@ const Review = () => {
 
         <div className='category-ctn' >
           <h1>Categories</h1>
-          
-            <h4 className='r-links' value='None' onClick={() => selectCategory('None')} >All</h4>
+
+            <h4 className='r-links' value='None' onClick={() => selectCategory('None')} >Random</h4>
 
             <h4 className='r-links' value='OOP' onClick={() => selectCategory('OOP')} >OOP</h4>
 

@@ -26,8 +26,6 @@ public class Card {
 
     private String category;
 
-    private boolean answerDisplayed = false;
-
     private boolean isDeleted = false;
 
 }

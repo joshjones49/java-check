@@ -3,53 +3,53 @@ import './ReviewCtnRight.css'
 import { useContext, useEffect } from 'react'
 import { CardContext } from '../../ContextAPIs/CardContextProvider'
 
+const CATEGORIES = {
+  NONE: 'None',
+  OOP: 'OOP',
+  SPRING_BOOT: 'Spring-Boot',
+  MAVEN: 'Maven',
+};
+
 const ReviewCtnRight = () => {
 
-    const {
-        cardList, toggleAnswer,
-        selectCategory, selectedCategory, oopList,
-        mavenList, springBootList
-    } = useContext(CardContext)
+  const { cardList, toggleAnswer,
+     selectedCategory, oopList,
+      springBootList, mavenList, isLoading 
+    } = useContext(CardContext);
 
-    const renderCards = (list) => {
-      return list.map(card => (
+  const renderCards = (list) => {
+    return list.length > 0 ? (
+      list.map(card => (
         <div key={card.id} className="card">
           <h2>{card.answerDisplayed ? card.answer : card.question}</h2>
-          <button className='toggle-btn' onClick={() => toggleAnswer(card)}>
+          <button className="toggle-btn" onClick={() => toggleAnswer(card)}>
             <h4>{card.answerDisplayed ? 'BACK' : 'ANSWER'}</h4>
           </button>
         </div>
       ))
-    }
+    ) : (
+      <p>No cards were found in this category</p>
+    );
+  };
 
   return (
-    <div className='review-ctn-right' >
+    <div className="review-ctn-right">
       {(() => {
-        if (selectedCategory === 'None') {
-          return cardList.length > 0
-            ? renderCards(cardList)
-            : <p>No cards were found in this category</p>;
+        switch (selectedCategory) {
+          case CATEGORIES.NONE:
+            return renderCards(cardList);
+          case CATEGORIES.OOP:
+            return renderCards(oopList);
+          case CATEGORIES.SPRING_BOOT:
+            return renderCards(springBootList);
+          case CATEGORIES.MAVEN:
+            return renderCards(mavenList);
+          default:
+            return <p>Invalid category selected</p>;
         }
-        if (selectedCategory === 'OOP') {
-          return oopList.length > 0
-            ? renderCards(oopList)
-            : <p>No cards were found in this category</p>;
-        }
-        if (selectedCategory === 'Spring-Boot') {
-          return springBootList.length > 0
-            ? renderCards(springBootList)
-            : <p>No cards were found in this category</p>;
-        }
-        if (selectedCategory === 'Maven') {
-          return mavenList.length > 0
-            ? renderCards(mavenList)
-            : <p>No cards were found in this category</p>;
-        }
-        // If category is not recognized
-        return <p>No cards were found in this category</p>;
       })()}
     </div>
-  )
-}
+  );
+};
 
 export default ReviewCtnRight
