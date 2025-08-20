@@ -53,7 +53,7 @@ public class Seeder implements CommandLineRunner {
         card4.setAnswer("It is a class that cannot be instantiated and is declared with the " +
                 "abstract keyword. It may contain abstract and concrete methods. A concrete class" +
                 " is a regular class that can be instantiated and must provide implementation for" +
-                " all methods");
+                " all methods.");
         card4.setCategory("OOP");
         cardRepo.saveAndFlush(card4);
 
@@ -61,10 +61,28 @@ public class Seeder implements CommandLineRunner {
         card5.setQuestion("What is an interface in and how does it support multiple inheritance?");
         card5.setAnswer("It is a blueprint of a class that contains abstract methods and possibly" +
                 " constants or default methods (Java 8). It defines a contract that implementing " +
-                "classes must follow. Supports multipole inheritance since a class can implement " +
+                "classes must follow. Supports multiple inheritance since a class can implement " +
                 "multiple interfaces.");
         card5.setCategory("OOP");
         cardRepo.saveAndFlush(card5);
+
+        Card card6 = new Card();
+        card6.setQuestion("What is polymorphism and how is it achieved?");
+        card6.setAnswer("Polymorphism allows objects to be treated as instances of their parent " +
+                "class while invoking their specific behavior. It is achieved in 2 ways: " +
+                "Overloading and Overriding");
+        card6.setCategory("OOP");
+        cardRepo.saveAndFlush(card6);
+
+        Card card7 = new Card();
+        card7.setQuestion("What is Spring Boot, and how does it differ from the Spring Framework?");
+        card7.setAnswer("Spring Boot is an extension of the Spring Framework that simplifies the " +
+                "development of production-ready applications by providing auto-configuration and" +
+                " an opinionated setup. Unlike the Spring Framework, which requires extensive " +
+                "manual configuration, Spring Boot reduces boilerplate code and enables faster " +
+                "development with embedded servers.");
+        card7.setCategory("Spring-Boot");
+        cardRepo.saveAndFlush(card7);
 
 //        Clan clan1 = new Clan();
 //        clan1.setName("Java Pros");
