@@ -84,6 +84,65 @@ public class Seeder implements CommandLineRunner {
         card7.setCategory("Spring-Boot");
         cardRepo.saveAndFlush(card7);
 
+        Card card8 = new Card();
+        card8.setQuestion("What is the purpose of the @RestController annotation in Spring Boot?");
+        card8.setAnswer("The @RestController annotation marks a class as a controller that " +
+                "handles HTTP requests and returns data directly as JSON or XML. It combines " +
+                "@Controller and @ResponseBody to simplify REST API development.");
+        card8.setCategory("Spring-Boot");
+        cardRepo.saveAndFlush(card8);
+
+        Card card9 = new Card();
+        card9.setQuestion("What are Spring Boot Starters, and why are they useful?");
+        card9.setAnswer("Spring Boot Starters are pre-configured dependency templates that " +
+                "simplify the inclusion of libraries for specific functionalities, such as web " +
+                "development or database access. They are useful because they reduce the need to" +
+                " manually specify dependencies and ensure compatible versions.");
+        card9.setCategory("Spring-Boot");
+        cardRepo.saveAndFlush(card9);
+
+        Card card10 = new Card();
+        card10.setQuestion("How does Spring Boot handle auto-configuration?");
+        card10.setAnswer("Spring Boot uses auto-configuration to automatically configure the " +
+                "application based on the dependencies present in the classpath. It applies " +
+                "sensible defaults and settings, which can be customized, to minimize manual " +
+                "configuration effort.");
+        card10.setCategory("Spring-Boot");
+        cardRepo.saveAndFlush(card10);
+
+        Card card11 = new Card();
+        card11.setQuestion("What is the role of the application.properties file in Spring Boot?");
+        card11.setAnswer("The application.properties file is used to configure application " +
+                "settings, such as database connections, server ports, and logging levels. It " +
+                "allows developers to externalize configuration and customize the application " +
+                "without changing the code.");
+        card11.setCategory("Spring-Boot");
+        cardRepo.saveAndFlush(card11);
+
+        Card card12 = new Card();
+        card12.setQuestion("How can you change the default port of a Spring Boot application?");
+        card12.setAnswer("You can change the default port of a Spring Boot application by setting" +
+                " the server.port property in the application.properties file to the desired " +
+                "port number, such as server.port=8081.");
+        card12.setCategory("Spring-Boot");
+        cardRepo.saveAndFlush(card12);
+
+        Card card13 = new Card();
+        card13.setQuestion("What is the Spring Boot DevTools module, and how does it help " +
+                "developers?");
+        card13.setAnswer("The Spring Boot DevTools module enhances the development experience by" +
+                " enabling features like automatic application restarts when code changes and a " +
+                "live reload for browser updates. It speeds up development by reducing manual " +
+                "restarts and improving feedback loops.");
+        card13.setCategory("Spring-Boot");
+        cardRepo.saveAndFlush(card13);
+
+        //        Card card9 = new Card();
+//        card9.setQuestion("");
+//        card9.setAnswer("");
+//        card9.setCategory("Spring-Boot");
+//        cardRepo.saveAndFlush(card9);
+
 //        Clan clan1 = new Clan();
 //        clan1.setName("Java Pros");
 
