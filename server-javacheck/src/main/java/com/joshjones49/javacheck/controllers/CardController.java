@@ -22,4 +22,9 @@ public class CardController {
     public List<CardResponseDto> getCards() {
         return cardService.getCards();
     }
+
+    @GetMapping("/random")
+    public List<CardResponseDto> getRandomOrder() {
+        return cardService.getRandomOrder();
+    }
 }

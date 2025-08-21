@@ -22,6 +22,14 @@ public class CardServiceImpl implements CardService {
 
         List<Card> cardList = cardRepo.findAll();
 
-        return cardMapper.entitiesToDto(cardList);
+        return cardMapper.entitiesToDtos(cardList);
+    }
+
+    @Override
+    public List<CardResponseDto> getRandomOrder() {
+
+        List<Card> randomList = cardRepo.findAllInRandomOrder();
+
+        return cardMapper.entitiesToDtos(randomList);
     }
 }

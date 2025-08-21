@@ -2,13 +2,7 @@ import './ReviewCtnRight.css'
 
 import { useContext, useEffect } from 'react'
 import { CardContext } from '../../ContextAPIs/CardContextProvider'
-
-const CATEGORIES = {
-  NONE: 'None',
-  OOP: 'OOP',
-  SPRING_BOOT: 'Spring-Boot',
-  MAVEN: 'Maven',
-};
+import { CATEGORIES } from '../../objects/categories.mjs';
 
 const ReviewCtnRight = () => {
 

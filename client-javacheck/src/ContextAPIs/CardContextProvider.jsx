@@ -1,16 +1,10 @@
 import React, { useState, useEffect, useMemo } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import { CATEGORIES } from "../objects/categories.mjs";
 
 export const CardContext = React.createContext();
 
 const CardContextProvider = ({ children }) => {
-
-    const CATEGORIES = {
-        NONE: 'None',
-        OOP: 'OOP',
-        SPRING_BOOT: 'Spring-Boot',
-        MAVEN: 'Maven'
-    }
 
     let url = 'http://localhost:8080'
 
@@ -23,7 +17,7 @@ const CardContextProvider = ({ children }) => {
     const getAllCards = async () => {
         setIsLoading(true)
         try {
-            const res = await fetch(`${url}/cards`)
+            const res = await fetch(`${url}/cards/random`)
             if(!res.ok) {
                 throw new Error(`Failed to fetch cards: ${res.status}`)
             }

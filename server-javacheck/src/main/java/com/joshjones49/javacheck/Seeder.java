@@ -137,7 +137,43 @@ public class Seeder implements CommandLineRunner {
         card13.setCategory("Spring-Boot");
         cardRepo.saveAndFlush(card13);
 
-        //        Card card9 = new Card();
+        Card card14 = new Card();
+        card14.setQuestion("What is Maven, and what is its primary purpose?");
+        card14.setAnswer("Maven is a build automation tool primarily used for Java projects to " +
+                "manage dependencies, build processes, and project configurations. Its primary " +
+                "purpose is to simplify and standardize the build process by providing a uniform" +
+                " build system and dependency management.");
+        card14.setCategory("Maven");
+        cardRepo.saveAndFlush(card14);
+
+        Card card15 = new Card();
+        card15.setQuestion("What is the purpose of the pom.xml file in a Maven project?");
+        card15.setAnswer("The pom.xml file, or Project Object Model, is the core configuration " +
+                "file in a Maven project that defines the project’s dependencies, build " +
+                "settings, plugins, and metadata. It serves as the blueprint for how Maven " +
+                "builds and manages the project.");
+        card15.setCategory("Maven");
+        cardRepo.saveAndFlush(card15);
+
+        Card card16 = new Card();
+        card16.setQuestion("What is a Maven repository, and what are the different types?");
+        card16.setAnswer("A Maven repository is a storage location where Maven retrieves " +
+                "dependencies, plugins, and libraries. The three types are local (on the " +
+                "developer’s machine), central (a global repository hosted by Maven), and remote" +
+                " (organization-specific or third-party repositories).");
+        card16.setCategory("Maven");
+        cardRepo.saveAndFlush(card16);
+
+        Card card17 = new Card();
+        card17.setQuestion("How does Maven handle dependency management?");
+        card17.setAnswer("Maven handles dependency management by defining dependencies in the " +
+                "pom.xml file, automatically downloading them from repositories, and resolving " +
+                "transitive dependencies. It ensures consistent versions and reduces manual " +
+                "dependency handling.");
+        card17.setCategory("Maven");
+        cardRepo.saveAndFlush(card17);
+
+        //Card card9 = new Card();
 //        card9.setQuestion("");
 //        card9.setAnswer("");
 //        card9.setCategory("Spring-Boot");

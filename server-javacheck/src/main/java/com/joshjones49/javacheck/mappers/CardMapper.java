@@ -17,5 +17,5 @@ public interface CardMapper {
     Card requestDtoToEntity(CardRequestDto cardRequestDto);
 
     //turn list of entities to dtos
-    List<CardResponseDto> entitiesToDto(List<Card> card);
+    List<CardResponseDto> entitiesToDtos(List<Card> card);
 }
