@@ -5,6 +5,7 @@ import ReviewCtnRight from '../../components/ReviewCtnRight/ReviewCtnRight'
 import { useContext } from 'react'
 import { CardContext } from '../../ContextAPIs/CardContextProvider'
 import { CATEGORIES } from '../../objects/categories.mjs'
+import { FaSearch } from "react-icons/fa";
 
 const Review = () => {
 
@@ -17,7 +18,10 @@ const Review = () => {
 
       <div className='review-menu' >
 
-        <input type="text" placeholder='search' />
+      <div className="search">
+        <input type="text" placeholder='search...' />
+        <button className='search-icon' ><FaSearch/></button>
+      </div>
 
         <div className='category-ctn' >
           <h1>Categories</h1>
