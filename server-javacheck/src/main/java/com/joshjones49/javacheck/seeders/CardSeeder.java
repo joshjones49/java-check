@@ -1,23 +1,18 @@
 package com.joshjones49.javacheck;
 
 import com.joshjones49.javacheck.entities.Card;
-import com.joshjones49.javacheck.entities.Clan;
-import com.joshjones49.javacheck.entities.Player;
 import com.joshjones49.javacheck.repos.CardRepo;
-import com.joshjones49.javacheck.repos.PlayerRepo;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
 @Component
-public class Seeder implements CommandLineRunner {
+public class CardSeeder implements CommandLineRunner {
 
     private CardRepo cardRepo;
-    private PlayerRepo playerRepo;
 
-    public Seeder(CardRepo cardRepo, PlayerRepo playerRepo){
+    public CardSeeder(CardRepo cardRepo){
         this.cardRepo = cardRepo;
-        this.playerRepo = playerRepo;
     }
 
     @Override
@@ -173,20 +168,11 @@ public class Seeder implements CommandLineRunner {
         card17.setCategory("Maven");
         cardRepo.saveAndFlush(card17);
 
-        //Card card9 = new Card();
+//        Card card9 = new Card();
 //        card9.setQuestion("");
 //        card9.setAnswer("");
 //        card9.setCategory("Spring-Boot");
 //        cardRepo.saveAndFlush(card9);
-
-//        Clan clan1 = new Clan();
-//        clan1.setName("Java Pros");
-
-        Player player1 = new Player();
-        player1.setUsername("ultramax21");
-        player1.setPassword("123");
-//        player1.setClan(clan1);
-        playerRepo.saveAndFlush(player1);
 
     }
 }
