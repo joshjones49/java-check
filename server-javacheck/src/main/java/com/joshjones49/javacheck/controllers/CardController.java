@@ -3,10 +3,7 @@ package com.joshjones49.javacheck.controllers;
 import com.joshjones49.javacheck.dtos.card.CardResponseDto;
 import com.joshjones49.javacheck.services.CardService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -26,5 +23,11 @@ public class CardController {
     @GetMapping("/random")
     public List<CardResponseDto> getRandomOrder() {
         return cardService.getRandomOrder();
+    }
+
+    @GetMapping("/search")
+    public List<CardResponseDto> getUserSearchedCards(@RequestParam String searchTerm) {
+        System.out.println("Received Search Term: "+ searchTerm);
+        return cardService.getUserSearchedCards(searchTerm);
     }
 }

@@ -10,4 +10,6 @@ public interface CardService {
     List<CardResponseDto> getCards();
 
     List<CardResponseDto> getRandomOrder();
+
+    List<CardResponseDto> getUserSearchedCards(String searchTerm);
 }

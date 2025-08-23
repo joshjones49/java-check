@@ -1,4 +1,4 @@
-package com.joshjones49.javacheck;
+package com.joshjones49.javacheck.seeders;
 
 import com.joshjones49.javacheck.entities.Card;
 import com.joshjones49.javacheck.repos.CardRepo;
