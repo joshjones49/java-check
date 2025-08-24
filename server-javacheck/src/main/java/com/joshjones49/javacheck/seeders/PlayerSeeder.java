@@ -38,6 +38,16 @@ public class PlayerSeeder {
             player2.getScores().add(70);
             playerRepo.saveAndFlush(player2);
 
+            Player player3 = new Player();
+            player3.setUsername("balgrufX");
+            player3.setPassword("123");
+            player3.getScores().add(87);
+            player3.getScores().add(63);
+            player3.getScores().add(65);
+            player3.getScores().add(78);
+            player3.getScores().add(73);
+            playerRepo.saveAndFlush(player3);
+
 //        Player player1 = new Player();
 //        player1.setUsername("ultramax21");
 //        player1.setPassword("123");

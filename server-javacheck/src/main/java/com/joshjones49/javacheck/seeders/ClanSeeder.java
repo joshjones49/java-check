@@ -18,7 +18,15 @@ public class ClanSeeder {
     public void seed() {
 
         Clan clan1 = new Clan();
-        clan1.setName("Java Pros");
+        clan1.setName("That's So Maven");
         clanRepo.saveAndFlush(clan1);
+
+        Clan clan2 = new Clan();
+        clan2.setName("Java Beans");
+        clanRepo.saveAndFlush(clan2);
+
+        Clan clan3 = new Clan();
+        clan3.setName("Spring-Booters");
+        clanRepo.saveAndFlush(clan3);
     }
 }
