@@ -1,11 +1,13 @@
 package com.joshjones49.javacheck.services.impl;
 
+import com.joshjones49.javacheck.dtos.clan.ClanRequestDto;
 import com.joshjones49.javacheck.dtos.clan.ClanResponseDto;
 import com.joshjones49.javacheck.entities.Clan;
 import com.joshjones49.javacheck.mappers.ClanMapper;
 import com.joshjones49.javacheck.repos.ClanRepo;
 import com.joshjones49.javacheck.services.ClanService;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.BadRequestException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -24,5 +26,26 @@ public class ClanServiceImpl implements ClanService {
         List<Clan> clanList = clanRepo.findAll();
 
         return clanMapper.entitiesToDtos(clanList);
+    }
+
+    @Override
+    public ClanResponseDto createClan(ClanRequestDto clanRequestDto) throws BadRequestException {
+
+        if(clanRequestDto == null || clanRequestDto.getName().isEmpty()) {
+            throw new BadRequestException();
+        }
+
+        List<Clan> clanList = clanRepo.findByName(clanRequestDto.getName());
+
+        if(!clanList.isEmpty()) {
+            throw new BadRequestException();
+        }
+
+        Clan clan = clanMapper.requestDtoToEntity(clanRequestDto);
+
+        clanRepo.saveAndFlush(clan);
+
+
+        return clanMapper.entityToDto(clan);
     }
 }

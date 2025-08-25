@@ -48,6 +48,26 @@ public class PlayerSeeder {
             player3.getScores().add(73);
             playerRepo.saveAndFlush(player3);
 
+            Player player5 = new Player();
+            player5.setUsername("roll45");
+            player5.setPassword("123");
+            player5.getScores().add(58);
+            player5.getScores().add(50);
+            player5.getScores().add(73);
+            player5.getScores().add(57);
+            player5.getScores().add(90);
+            playerRepo.saveAndFlush(player5);
+
+            Player player4 = new Player();
+            player4.setUsername("gripemieser");
+            player4.setPassword("123");
+            player4.getScores().add(80);
+            player4.getScores().add(71);
+            player4.getScores().add(68);
+            player4.getScores().add(85);
+            player4.getScores().add(72);
+            playerRepo.saveAndFlush(player4);
+
 //        Player player1 = new Player();
 //        player1.setUsername("ultramax21");
 //        player1.setPassword("123");
